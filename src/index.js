@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
-import Badge from './components/Badge';
+import BadgeNew from './pages/BadgeNew';
 
 
 
@@ -18,12 +18,6 @@ const container = document.getElementById('app');
 
 // ReactDOM.render(__what__, __where__);
 ReactDOM.render(
-    <Badge 
-        firstName="Christian" 
-        lastName="Tambo"
-        avatarUrl="https://www.gravatar.com/avatar?d=identicon"
-        jobTitle="Frontend Developer"
-        twitter="@christiantambo" 
-    />, 
+    <BadgeNew />, 
     container
 );
