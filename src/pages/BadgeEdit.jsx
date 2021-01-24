@@ -36,7 +36,7 @@ class BadgeEdit extends React.Component {
             this.setState({loading: false, error: error})
         }
     }
-
+    
     handleChange = e => {
         // const nextForm = this.state.form;
         // nextForm[e.target.name] = e.target.value;
