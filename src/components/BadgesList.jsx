@@ -25,7 +25,7 @@ class BadgesList extends React.Component{
                                 className="BadgesListItem__avatar" 
                                 email={badge.email} 
                             />
-                            <div>
+                            <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
                                 <div className="BadgesListItem__name">
                                     {badge.firstName} {badge.lastName}
                                 </div>
@@ -36,7 +36,7 @@ class BadgesList extends React.Component{
                                 <div className="BadgesListItem__jobTitle">
                                     {badge.jobTitle}
                                 </div>
-                            </div>
+                            </Link>
                         </li>
                     )
                 })}
